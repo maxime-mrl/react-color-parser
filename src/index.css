@@ -1,13 +1,72 @@
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  color: inherit;
+  vertical-align: baseline;
+  line-height: 1;
+  appearance: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+ol, ul {
+  list-style: none;
+}
+
+textarea {
+  resize: none;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: #252525;
+  color: white;
+}
+.color-sqr {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: min(15rem, min(40vw, 40vh));
+  height: min(15rem, min(40vw, 40vh));
+  font-size: 2.5rem;
+  font-weight: bold;
+  background-color: #ffffff;
+  border: 0.5rem solid;
+  border-color: #1e1e1e;
+  color: #1e1e1e;
+  border-radius: 0.5rem;
+}
+
+.color-input input {
+  border-radius: 0.5rem;
+  padding: 0.5em 0 0.5em 0.2em;
+  color: #1e1e1e;
+}
+
+.toggle-btn {
+  border: #1e1e1e solid 1px;
+  padding: 0.8em 2em;
+  border-radius: 50rem;
+  color: #1e1e1e;
+  font-weight: bold;
+  cursor: pointer;
 }

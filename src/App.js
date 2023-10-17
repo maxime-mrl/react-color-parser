@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import ColorSquare from "./colorSquare/ColorSquare";
+import ColorInput from "./colorInput/ColorInput";
+import ToggleBtn from "./toggleBtn/ToggleBtn";
 
 function App() {
+  const [squareColor, setSquareColor] = useState('');
+  const [colorName, setColorName] = useState('');
+  const [textColor, setTextColor] = useState('#000000');
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ColorSquare color={squareColor} textColor={textColor} colorName={colorName} />
+      <ColorInput setSquareColor={setSquareColor} setTextColor={setTextColor} setColorName={setColorName} />
+      <ToggleBtn textColor={textColor} setTextColor={setTextColor} />
     </div>
   );
 }
