@@ -1,0 +1,14 @@
+{
+  "expo": {
+    "scheme": "acme",
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "name": "test-react-native",
+    "slug": "test-react-native",
+    "backgroundColor": "#1e1e1e"
+  }
+}
